@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    
+}
+
+/*header*/
+.navbar{
+    height: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    top: 0%;
+    background-color: blueviolet;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.navbar .logo h1{
+    border-bottom: 4px solid  #f63e4e;
+    margin: 30px;
+    align-content: center;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar .menu li .active{
+    border-bottom: 4px solid  #f63e4e ;
+}
+.menu-btn{
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.menu a{
+    color: white;
+    display: block;
+    margin-left: 20px;
+    border-bottom: 4px solid transparent ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu li a i{
+    color: #f63e4e;
+}
+.menu li a:hover{
+    border-bottom:4px solid  #f63e4e
+}
+
+/*content*/
+
+.content{
+    background-image: url(Shopping.jpg);
+    background-size: auto ;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    /*flex-wrap: wrap;*/    
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    height: 160vh;
+    /* width: 100vw; */
+    position: relative;
+}
+.content h1{
+    font-size: 40px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 250px;
+    
+}
+.content p{
+    position: relative;
+    bottom: 245px;
+    
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background-color: #f63e4e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: 242px;
+    
+}
+.pheading{
+    text-align: center;
+    margin: 50px 0;
+    background-color: pink;
+    
+}
+.sec{
+    padding: 10px 5%;
+    background-color: pink;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.products .card{
+    width: 310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.products .card .img{
+    height: 250px;
+    width: 90%;
+    float: right;
+}
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .price{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.products .card .box .btn{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+.products .card .box .btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+.products .card .img1{
+    justify-content: center;
+    
+}
+.products .card .img2{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 35px;
+
+}
+.products .card .desc2{
+    padding: 5px 20px;
+    opacity: 0.8;
+    position: relative;
+    top: 125px;
+}
+.products .card .title2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+    position: relative;
+    top: 130px;
+}
+.products .card .box2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box2 .price2{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 135px;
+
+}
+.products .card .box2 .btn2{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+    position: relative;
+    top: 135px;
+}
+.products .card .box2 .btn2:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+.products .card .img3{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 35px;
+
+}
+.products .card .desc3{
+    padding: 5px 20px;
+    opacity: 0.8;
+    position: relative;
+    top: 125px;
+}
+.products .card .title3{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+    position: relative;
+    top: 130px;
+}
+.products .card .box3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box3 .price3{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 135px;
+
+}
+.products .card .box3 .btn3{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+    position: relative;
+    top: 135px;
+}
+.products .card .box3 .btn3:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+.products .card .img4{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 20px;
+
+}
+.products .card .desc4{
+    padding: 5px 20px;
+    opacity: 0.8;
+    position: relative;
+    top: 85px;
+}
+.products .card .title4{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+    position: relative;
+    top: 90px;
+}
+.products .card .box4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box4 .price4{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 90px;
+
+}
+.products .card .box4 .btn4{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+    position: relative;
+    top: 90px;
+}
+.products .card .box4 .btn4:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+.products .card .img5{
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    left: 30px;
+}
+.products .card .desc5{
+    padding: 5px 20px;
+    opacity: 0.8;
+    position: relative;
+    top: 28px;
+}
+.products .card .title5{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+    position: relative;
+    top: 30px;
+}
+.products .card .box5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box5 .price5{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 28px;
+
+}
+.products .card .box5 .btn5{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+    position: relative;
+    top: 28px;
+}
+.products .card .box5 .btn5:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+footer{
+    background-color:#424144;
+    height: 10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+    color: white;
+}
+footer p a{
+    text-decoration: none;
+    color: #f63e4e;
+    font-weight: bold;
+}
+.footer1{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     color:white;
+     /*margin-top:10px;*/
+     background-color: #424144;
+}
+.social-media a i{
+     justify-content: center;
+     color:white;
+     flex-wrap: wrap;
+    
+}
+
+
